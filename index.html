@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="qrcode_icon.ico">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-9p/EzXeJ6jvMchMlLQ4Xwc5PQb4cBw/izF7+Z+P7wqLdN8k3jHpy3u5Rd8+Ry0AjlJ5YzXwWQo7Q+8ZL7RcG8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta thhp-equiv="X-UA-Compatible" content="IE=edge ,chrome=1">
+    <title>QR Code Generator</title>
+</head>
+<body>
+	<div>
+	<a style="text-decoration: none; color: rgb(0, 0, 0);" href="abme.html" >
+	<div title="About Me" id="user-icon" onclick="toggleMute()">
+		
+		<i  class="fa fa-user"></i>
+	  </div>
+	</a>
+</div>
+<br><br><br><br>
+    <h1 class="title">QR Code Generator</h1>
+    <input type="text" id="qr-input" class="qr-input" placeholder="Enter URL">
+    <button class="generate-button" onclick=" playClickSound();" id="generate-button">Generate QR Code</button>
+    <div id="qr-code"></div>
+    <a class="download-button" onclick=" playClickSound();" href="#" id="download-button" download="qrcode.png">Download QR Code</a>
+
+<br><br>
+
+    <audio id="clickSound">
+        <source src="button-click.mp3" type="audio/mpeg">
+      
+        </audio>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</body>
+</html>

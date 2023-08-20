@@ -1,0 +1,147 @@
+@font-face {
+  font-family: moonllys;
+  src: url("Moonllys.ttf");
+}
+ *{  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+.title{
+  font-family: moonllys , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(250, 77, 25);
+}
+@media screen and (max-width :400px) {
+  .qr-input{
+    width: 300px;
+  }
+  .title{
+    font-size: 200px;
+  }
+}
+body{
+background-image: url("bgimg2.png");
+    background-size: 100%;
+}
+.qr-input {
+  border-radius: 2%;
+    width: 250px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#qr-code canvas {
+background-color: #ffffff; 
+border: 1px solid #000000; 
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.generate-button {
+  font-family: "moonllys", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 12px;
+    background-color: #005203;
+    color: white;
+    border: none;
+    
+border: 1px solid #000000; 
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+a:active {
+  background-color: #d9d9d9;
+  transform: scale(0.95);
+}
+a.delete {
+  background-color: #ff5d5d;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(255, 93, 93, 0.4);
+}
+
+a.delete:hover {
+  background-color: #ff7373;
+}
+
+a.delete:active {
+  background-color: #dd0000;
+  transform: scale(0.95);
+}
+.generate-button:hover{
+  background-color: #ada8a8;
+  color: #000000;
+}
+#qr-code {
+    margin-top: 20px;
+}
+
+.download-button {
+    text-decoration: none;
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+    color: rgb(255, 0, 0);
+    border: none;
+    font-size: 20px;
+    font-family: "moonllys",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+border: 2px solid #ff0000; 
+border-radius: 5px;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+.download-button:hover{
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+ 
+  
+  button:active {
+    background-color: #d9d9d9;
+    transform: scale(0.95);
+  }
+  button.delete {
+    background-color: #ff5d5d;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(255, 93, 93, 0.4);
+  }
+  
+  button.delete:hover {
+    background-color: #ff7373;
+  }
+  
+  button.delete:active {
+    background-color: #dd0000;
+    transform: scale(0.95);
+  }
+  #user-icon {
+  position: absolute;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+#user-icon:hover {
+    background-color: #ff3e54;
+    color: #fff;
+}
+
+#user-icon:active{
+    background-color: #d9d9d9;
+    transform: scale(0.95);
+  }
+  #user-icon.delete{
+    background-color: #ff5d5d;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(255, 93, 93, 0.4);
+  }

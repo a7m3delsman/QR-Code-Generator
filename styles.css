@@ -11,14 +11,7 @@
   font-family: moonllys , 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(250, 77, 25);
 }
-@media screen and (max-width :400px) {
-  .qr-input{
-    width: 300px;
-  }
-  .title{
-    font-size: 200px;
-  }
-}
+
 body{
 background-image: url("bgimg2.png");
     background-size: 100%;
